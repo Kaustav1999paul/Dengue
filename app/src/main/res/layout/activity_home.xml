@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_default"
+    tools:context=".Home">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/capriola"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="5dp"
+                android:text="Hello there,"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:fontFamily="@font/capriola"
+                android:textColor="#D8D8D8"
+                android:textSize="17dp"
+                android:text="Data"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                app:cardBackgroundColor="#8348CC"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                android:layout_marginVertical="20dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        app:cardCornerRadius="100dp"
+                        app:cardElevation="10dp"
+                        android:layout_marginVertical="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="60dp">
+                        <ImageView
+                            android:id="@+id/avatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/capriola"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="start"
+                            android:textStyle="bold"
+                            android:text="Name"/>
+
+
+                        <TextView
+                            android:id="@+id/email"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/capriola"
+                            android:textColor="#EDEDED"
+                            android:layout_marginTop="5dp"
+                            android:textFontWeight="1"
+                            android:layout_gravity="start"
+                            android:text="email"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardColor"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                app:cardCornerRadius="50dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="10dp"
+                android:outlineSpotShadowColor="#FFFFFF"
+                android:outlineAmbientShadowColor="#FFFFFF"
+                app:cardBackgroundColor="#4AFFAB">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/statusLogo"
+                        android:layout_gravity="center"
+                        android:layout_width="30dp"
+                        android:src="@drawable/baseline_check_circle_24"
+                        android:layout_marginLeft="20dp"
+                        android:layout_height="30dp"/>
+
+                    <TextView
+                        android:id="@+id/statusText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginRight="30dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="20dp"
+                        android:text="You are Safe."/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textH1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/capriola"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="60dp"
+                android:textStyle="bold"
+                android:text="Preventions"/>
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#DFDFDF"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/steps"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/capriola"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="60dp"
+                android:textStyle="bold"
+                android:text="Helpline"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:drawableLeft="@drawable/baseline_call_24"
+                android:drawablePadding="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="080-22033167"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:drawableLeft="@drawable/round_home_work_24"
+                android:drawablePadding="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Room Number 339, 339A 3rd Floor
+Vidhana Soudha, Bangalore-560001 "/>
+
+            <androidx.cardview.widget.CardView
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                app:cardBackgroundColor="#D5D5D5"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chat"
+                    android:layout_gravity="center"
+                    android:layout_margin="30dp"
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"/>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:paddingHorizontal="50dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_button"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/round_g_translate_24"
+        android:backgroundTint="#8348CC"
+        app:borderWidth="0dp"/>
+</RelativeLayout>

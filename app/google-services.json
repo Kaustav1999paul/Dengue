@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1010286598056",
+    "project_id": "dengue-ab2bb",
+    "storage_bucket": "dengue-ab2bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010286598056:android:05c6771400b95a29d66f9d",
+        "android_client_info": {
+          "package_name": "com.example.dengue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010286598056-mpfqjj006jnk41m1spgqtrtqekevlu13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf5mdhm8PhffZzz3h1Hf68nbL2Y6_5EAg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010286598056-mpfqjj006jnk41m1spgqtrtqekevlu13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
