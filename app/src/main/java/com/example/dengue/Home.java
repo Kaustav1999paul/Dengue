@@ -51,11 +51,10 @@ public class Home extends AppCompatActivity {
     FloatingActionButton translate;
     FirebaseAuth mAuth;
     String result="";
-    TextView dateT, name, email, statusText, textT, textH1;
+    TextView dateT, name, email, statusText, textT;
     ImageView avatar, statusLogo;
     DatabaseReference reference;
     CardView cardColor;
-    String text2;
     Button logout;
     TranslatorOptions translatorOptions;
     Translator translator;
@@ -85,14 +84,13 @@ public class Home extends AppCompatActivity {
         avatar = findViewById(R.id.avatar);
         statusLogo = findViewById(R.id.statusLogo);
 
-        textH1 = findViewById(R.id.textH1);
         textT = findViewById(R.id.text1);
-
         text1 = textT.getText().toString();
-        text2 = textH1.getText().toString();
+
 
         progressDialog =  new ProgressDialog(this);
         progressDialog.setTitle("Please Wait");
+        progressDialog.setIcon(R.mipmap.ic_launcher_round);
         progressDialog.setCanceledOnTouchOutside(false);
         loadAllLanguage();
 
