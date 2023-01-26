@@ -20,8 +20,9 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:fontFamily="@font/capriola"
-            android:text="Welcome"
+            android:text="ಸ್ವಾಗತ"
             android:textColor="#FFFFFF"
+            android:paddingVertical="10dp"
             android:textSize="45dp"
             android:textStyle="bold" />
 
@@ -30,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:textSize="20dp"
-            android:text="Get to know about your health \nstatus in just few clicks."
+            android:text="ಕೆಲವೇ ಕ್ಲಿಕ್‌ಗಳಲ್ಲಿ ನಿಮ್ಮ ಆರೋಗ್ಯ ಸ್ಥಿತಿಯನ್ನು ತಿಳಿದುಕೊಳ್ಳಿ"
             android:textColor="#FFFFFF"/>
     </LinearLayout>
 

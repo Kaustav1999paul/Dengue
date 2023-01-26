@@ -51,7 +51,7 @@ public class Home extends AppCompatActivity {
     FloatingActionButton translate;
     FirebaseAuth mAuth;
     String result="";
-    TextView dateT, name, email, statusText, textT;
+    TextView dateT, name, email, statusText, textT, survay;
     ImageView avatar, statusLogo;
     DatabaseReference reference;
     CardView cardColor;
@@ -61,10 +61,8 @@ public class Home extends AppCompatActivity {
     ProgressDialog progressDialog;
     String text1;
     private ArrayList<ModelLanguage> languageArrayList;
-    private static final String TAG = "MAIN_TAG";
     String sourceLanguageCode = "en";
     String sourceLanguageTitle = "English";
-
     String destinationLanguageCode = "kn";
     String destinationLanguageTitle = "Kannada";
 
@@ -73,6 +71,7 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        survay = findViewById(R.id.survay);
         logout= findViewById(R.id.logout);
         translate = findViewById(R.id.translate);
         statusText = findViewById(R.id.statusText);
@@ -86,6 +85,13 @@ public class Home extends AppCompatActivity {
 
         textT = findViewById(R.id.text1);
         text1 = textT.getText().toString();
+
+        survay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Home.this, Question.class));
+            }
+        });
 
 
         progressDialog =  new ProgressDialog(this);
@@ -122,14 +128,14 @@ public class Home extends AppCompatActivity {
                         cardColor.setVisibility(View.VISIBLE);
                         cardColor.setCardBackgroundColor(Color.parseColor("#4AFFAB"));
                         statusLogo.setImageResource(R.drawable.baseline_check_circle_24);
-                        statusText.setText("You are safe!");
+                        statusText.setText("ನೀವು ಸುರಕ್ಷಿತವಾಗಿದ್ದೀರಿ");
                         statusText.setTextColor(Color.BLACK);
                     }else{
 //            Negative
                         cardColor.setVisibility(View.VISIBLE);
                         cardColor.setCardBackgroundColor(Color.parseColor("#F44336"));
                         statusLogo.setImageResource(R.drawable.baseline_cancel_24);
-                        statusText.setText("You are attacked by Dengue!");
+                        statusText.setText("ನೀವು ಡೇಂಗ್ಯೂ ನಿಂದ ಬಳಲುತ್ತಿದಿರಿ");
                         statusText.setTextColor(Color.WHITE);
                     }
                 }
@@ -155,17 +161,17 @@ public class Home extends AppCompatActivity {
         PieChart pie = findViewById(R.id.chat);
         ArrayList<PieEntry> v = new ArrayList<>();
 
-        v.add(new PieEntry(452, "2001"));
-        v.add(new PieEntry(152, "2003"));
-        v.add(new PieEntry(252, "2006"));
-        v.add(new PieEntry(342, "2009"));
-        v.add(new PieEntry(411, "2012"));
-        v.add(new PieEntry(223, "2022"));
+        v.add(new PieEntry(6083, "2016"));
+        v.add(new PieEntry(17844, "2017"));
+        v.add(new PieEntry(4848, "2018"));
+        v.add(new PieEntry(18183, "2019"));
+        v.add(new PieEntry(3823, "2020"));
+        v.add(new PieEntry(7189, "2021"));
 
-        PieDataSet pd = new PieDataSet(v, "Cases");
+        PieDataSet pd = new PieDataSet(v, "Years");
         pd.setColors(ColorTemplate.COLORFUL_COLORS);
         pd.setValueTextColor(Color.BLACK);
-        pd.setValueTextSize(16f);
+        pd.setValueTextSize(12f);
 
         PieData pieData = new PieData(pd);
 

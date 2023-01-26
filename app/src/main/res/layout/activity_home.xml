@@ -27,7 +27,7 @@
                 android:textSize="25dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="5dp"
-                android:text="Hello there,"/>
+                android:text="ನಮಸ್ಕಾರ,"/>
 
             <TextView
                 android:id="@+id/date"
@@ -104,9 +104,18 @@
             </androidx.cardview.widget.CardView>
 
 
+            <TextView
+                android:id="@+id/survay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:text="ಮತ್ತೊಮ್ಮೆ ಪರೀಕ್ಷೆ ತೆಗೆದುಕೊಳ್ಳಿ"/>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardColor"
-                android:visibility="visible"
+                android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="20dp"
@@ -139,7 +148,7 @@
                         android:layout_marginRight="30dp"
                         android:textColor="@color/black"
                         android:layout_marginLeft="20dp"
-                        android:text="You are Safe."/>
+                        android:text="ನೀವು ಸುರಕ್ಷಿತವಾಗಿರುತ್ತೀರಿ"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -154,7 +163,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="60dp"
                 android:textStyle="bold"
-                android:text="Preventions"/>
+                android:text="ತಡೆಗಟ್ಟುವಿಕೆ"/>
 
             <TextView
                 android:id="@+id/text1"
@@ -174,7 +183,7 @@
                 android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="60dp"
                 android:textStyle="bold"
-                android:text="Helpline"/>
+                android:text="ಸಹಾಯವಾಣಿ"/>
 
 
             <TextView
@@ -224,7 +233,7 @@ Vidhana Soudha, Bangalore-560001 "/>
                 android:paddingHorizontal="50dp"
                 android:layout_gravity="center"
                 android:layout_height="wrap_content"
-                android:text="Logout"
+                android:text="ಲಾಗ್ ಔಟ್"
                 android:textColor="@color/white"
                 android:background="@drawable/custom_button"
                 android:layout_marginHorizontal="20dp"
@@ -240,6 +249,7 @@ Vidhana Soudha, Bangalore-560001 "/>
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
+        android:visibility="gone"
         android:src="@drawable/round_g_translate_24"
         android:backgroundTint="#8348CC"
         app:borderWidth="0dp"/>
